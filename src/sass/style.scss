@@ -1,0 +1,45 @@
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 360px;
+  width: 640px;
+}
+
+.controls {
+  z-index: 1;
+}
+
+#canvas {
+  background: rgba(100, 0, 0, .4);
+
+  .warped-text {
+    position: absolute;
+    top: 247px;
+    left: 190px;
+    color: #ffffff;
+    font-size: 29px;
+    font-family: sans-serif;
+    transform: translate3d(23px, 45px, 29px);
+    skew-x: 40px;
+    transform-origin: left;
+    transform: skewX(31deg) rotateZ(-23deg) rotateY(30deg);
+  }
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
